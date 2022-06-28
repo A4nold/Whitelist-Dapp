@@ -107,7 +107,7 @@ export default function Home() {
         provider
       );
 
-      const _numberOfWhitelistedAddresses = await whitelistContract.numWhitelistedAddress();
+      const _numberOfWhitelistedAddresses = await whitelistContract.numAddressesWhitelisted();
       setNumberOfWhitelisted(_numberOfWhitelistedAddresses);    
 
     } catch (error) {
